@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:yamm_app/pages/home_page.dart';
+import 'package:yamm_app/pages/login_page.dart';
 
 class LoadPage extends StatefulWidget {
   const LoadPage({super.key, required this.title});
@@ -20,6 +21,6 @@ class _MyLoadPageState extends State<LoadPage> {
 
   @override
   Widget build(BuildContext context) {
-    return isLoading ? Container() : HomePage(title: "Home page");
+    return isLoading ? Container() : login_page();
   }
 }

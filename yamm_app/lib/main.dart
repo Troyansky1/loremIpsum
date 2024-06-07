@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:yamm_app/pages/home_page.dart';
 import 'package:yamm_app/pages/load_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:yamm_app/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Color.fromARGB(255, 255, 253, 252),
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromARGB(255, 0, 0, 0),
+          seedColor: Color.fromARGB(0, 150, 114, 89),
           brightness: Brightness.light,
         ),
         useMaterial3: true,
@@ -28,26 +29,26 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
           // ···
-          titleLarge: GoogleFonts.dosis(
+          titleLarge: GoogleFonts.heebo(
             fontSize: 30,
             fontStyle: FontStyle.italic,
           ),
-          titleMedium: GoogleFonts.dosis(
+          titleMedium: GoogleFonts.heebo(
             fontSize: 20,
           ),
-          titleSmall: GoogleFonts.dosis(
+          titleSmall: GoogleFonts.heebo(
             fontSize: 15,
           ),
 
-          bodyMedium: GoogleFonts.dosis(fontSize: 18),
-          displaySmall: GoogleFonts.dosis(),
-          labelLarge: GoogleFonts.dosis(fontSize: 17),
-          labelMedium: GoogleFonts.dosis(fontSize: 15),
-          labelSmall: GoogleFonts.dosis(fontSize: 20),
-          bodySmall: GoogleFonts.dosis(fontSize: 15),
+          bodyMedium: GoogleFonts.heebo(fontSize: 18),
+          displaySmall: GoogleFonts.heebo(),
+          labelLarge: GoogleFonts.heebo(fontSize: 17),
+          labelMedium: GoogleFonts.heebo(fontSize: 15),
+          labelSmall: GoogleFonts.heebo(fontSize: 20),
+          bodySmall: GoogleFonts.heebo(fontSize: 15),
         ),
       ),
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: login_page(),
     );
   }
 }
